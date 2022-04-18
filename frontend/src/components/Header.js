@@ -63,7 +63,7 @@ function Header() {
               <Link to={"/login"}>Login</Link>
             </li>
             }
-            {localStorage.getItem('loginValidate') &&
+            {localStorage.getItem('loginValidate') && notAdmin &&
                     <li>
                     <Link to={"/profile"} className='profileLink'>Profile</Link>
                     </li>
@@ -74,8 +74,7 @@ function Header() {
             </li>
             }
           </ul>
-          &nbsp;
-          {localStorage.getItem('loginValidate') &&
+          {localStorage.getItem('loginValidate') && notAdmin &&
             <Link to={"/cart"}>
               <button id="cartIcon">
                 <FontAwesomeIcon icon={faCartShopping} />
@@ -101,7 +100,7 @@ function Header() {
                 <Link to={"/login"} onClick={() => setOpenBurger(!openBurger)}>Login</Link>
               </li>
               }
-              {localStorage.getItem('loginValidate') && <li>
+              {localStorage.getItem('loginValidate') &&  notAdmin && <li>
                 <Link to={"/profile"} onClick={() => setOpenBurger(!openBurger)}  className='profileLink'>Profile</Link>
               </li>
               }

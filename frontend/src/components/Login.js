@@ -10,7 +10,7 @@ function Login() {
     const [isSubmitted, setIsSubmitted] = useState();
     const [isAdminUser, setIsAdminUser] = useState();
 
-    var loginCheck = sessionStorage.setItem('loginValid', false);
+    localStorage.setItem('loginValid', false);
   
     const errors = {
       uname: "Invalid Username",
@@ -56,13 +56,13 @@ function Login() {
     );
 
     function adminFunction() {
-      localStorage.setItem('loginValidate', true)
+      localStorage.setItem('loginValidate', true);
       window.alert("Admin login successful!");
       window.location.href = "/";
     }
 
     function loginFunction() {
-      localStorage.setItem('loginValidate', true)
+      localStorage.setItem('loginValidate', true);
       window.alert("Login successful!");
       window.location.href = "/";
     }
