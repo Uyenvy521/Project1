@@ -74,6 +74,7 @@ function Header() {
             </li>
             }
           </ul>
+          &nbsp;
           {localStorage.getItem('loginValidate') &&
             <Link to={"/cart"}>
               <button id="cartIcon">

@@ -25,12 +25,14 @@ function Cart() {
         price, 
         book_img
       }) => (
-        <div classname='shopInventory'>
+        <div className='shopInventory'>
         <div id='bookCard'>
             <img src={book_img} width=
             '100%' height='100%'/>
             <h3>{book_name}</h3>
             ${price}
+            <br/>
+            <button className="minusBtn"><FontAwesomeIcon icon={faTimes}/> Remove</button>
         </div>
         </div>
     );
@@ -92,7 +94,7 @@ function Cart() {
         ) : (
             <center>
               <h3>
-                The Cart is empty
+                The cart is empty
               </h3>
             </center>
           )}

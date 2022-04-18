@@ -11,12 +11,15 @@ function Admin() {
     let currentuser = sessionStorage.getItem('currentUser'); 
 
     const OrderItem = ({
+      username,
       orderid,
       orders,
       order_date
     }) => (
       <div>
           <h4>Order #{orderid}</h4>
+          <b>Order by: </b>{username}
+          <br/>
           <b>Order Date:</b> {order_date}
           <br/>
           {orders}

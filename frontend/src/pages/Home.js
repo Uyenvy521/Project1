@@ -5,6 +5,9 @@ import Slider2 from '../components/Slider2';
 import Slider3 from '../components/Slider3';
 
 function Home() {
+  let empty = "empty";
+  let cartstatus = localStorage.setItem('cartStatus', empty);
+
   return (
     <div id='homePage'>
 
