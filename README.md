@@ -10,12 +10,12 @@ React, PostgreSQL, Express.js, HTML, CSS
 Login, logout, login as an admin, purchase books, send inquiries, view order history.
 
 ## GETTING STARTED
-cd frontend
-npm install
+cd frontend,
+npm install,
 npm start
 
-cd backend
-npm install
+cd backend,
+npm install,
 node app.js
 
 ## CONTRIBUTORS
